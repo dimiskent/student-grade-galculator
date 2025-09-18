@@ -46,9 +46,10 @@ public class IntegerTools {
             System.out.print("Enter a number: ");
             if(scanner.hasNextInt()) {
                 return scanner.nextInt();
+            } else {
+                scanner.next();
+                System.out.println("Please input a WHOLE number!");
             }
-            scanner.next();
-            System.out.println("Please input a WHOLE number!");
         }
     }
     public void closeUserInput() {
